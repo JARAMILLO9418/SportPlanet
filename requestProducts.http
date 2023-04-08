@@ -1,0 +1,47 @@
+@urlApi = http://localhost:5000
+
+### get all products
+GET {{urlApi}}/products
+
+### get name a product
+GET {{urlApi}}/products?name=boca
+
+### banear single user
+POST {{urlApi}}/products/642237fc8186e2e058d00515
+
+
+### create a product
+POST {{urlApi}}/products
+Content-Type: application/json
+
+//Footwear
+{
+ "name":"INLIFE Whey Protein Powder", 
+ "productConditionals":[
+ 
+ {  "color":"rojo",
+  "image":["https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/713cJLNB1SL._SY450_.jpg","https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81aYxr6vPVL._SL1500_.jpg","https://ultimatefitnessbirmingham.co.uk/wp-content/uploads/2018/07/Gym-supplements-at-Ultimate-Fitness-Birmingham.jpg"],
+  "size":[{"amount":19}]},
+  
+ { "color":"negro",
+  "image":["https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/713cJLNB1SL._SY450_.jpg","https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81aYxr6vPVL._SL1500_.jpg","https://ultimatefitnessbirmingham.co.uk/wp-content/uploads/2018/07/Gym-supplements-at-Ultimate-Fitness-Birmingham.jpg"],
+  "size":[{"amount":10}]},
+  
+  {"color":"verde",
+  "image":["https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/713cJLNB1SL._SY450_.jpg","https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81aYxr6vPVL._SL1500_.jpg","https://ultimatefitnessbirmingham.co.uk/wp-content/uploads/2018/07/Gym-supplements-at-Ultimate-Fitness-Birmingham.jpg"],
+  "size":[{"amount":15}]}
+  
+  ],
+ "price":25.000,
+ "discount":0,
+ "description":"Gym Supplements form a crucial part of the dietary intake of most passionate athletes.",
+ "user":"642a17406d976304462646e8",
+ "season":2023 ,
+ "category": "supplements",
+ "gender":"men",
+ "state":"new",
+ "brands":"OTHER"
+}
+
+
+
